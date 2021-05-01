@@ -1,0 +1,29 @@
+<html>
+<head>
+<title>Family book</title>
+</head>
+<body>
+    <center>
+    <button onclick=update()>next</button>
+    <script>
+        var images =["https://image.freepik.com/free-vector/big-happy-family-with-hand-drawn-style_23-2147832436.jpg","https://image.shutterstock.com/image-vector/portrait-old-man-wearing-glasses-600w-582764596.jpg","https://tse4.mm.bing.net/th?id=OIP.ut9w-1STctzOoVVjuHAyhgHaHa&pid=Api&P=0&w=300&h=300","https://thumbs.dreamstime.com/z/mother-portrait-vector-illustration-lifestyle-mom-happiness-meadow-cheerful-71848683.jpg","https://img.freepik.com/free-vector/happy-cute-smile-kid-boy-crossed-arms_97632-1239.jpg?size=338&ext=jpg","https://thumbs.dreamstime.com/b/sister-portrait-pretty-teenage-girl-schoolgirl-long-brown-hair-satchel-bag-school-uniform-skirt-blouse-daughter-86364433.jpg"]
+   
+    var family=["family","dilijeet singh","ranveer singh","rocky singh","alia singh","soni sigh"]
+    var i=0
+    function update()
+    {
+        i++;
+        var numbers_of_family_member_in_array=5
+        if (i<numbers_of_family_member_in_array)
+        {
+            i=0;
+        }
+        var updatedImage=images[i]
+        var updatedname=names[i]
+        document.getElementById(images),src=updatedImage
+        document.getElementById(family),src=updatedname
+    }
+    </script>
+ </center>
+</body>
+</html>
